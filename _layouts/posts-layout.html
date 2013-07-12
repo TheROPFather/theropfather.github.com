@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/normalize.css"> <!-- reset -->
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/main.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-      <div id="header">
-        <nav>
-            <li>
-              <a href="https://www.twitter.com/theropfather">
-                <img src="/images/twitter.png" alt="Twitter Link" style="margin-top:5px" width="50">
-              </a>
-              <a href="https://www.last.fm/user/theropfather">
-                <img src="/images/lastfm.png" alt="Twitter Link" style="margin-top:5px" width="50">
-              </a>
-            </li>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="sidebar">
-      <ul>
-        <li class="side-head">Recent Posts</li>
-        
-        {% for post in site.posts %}
-          {% if forloop.index <= 3 %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-
-      </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="/javascripts/respond.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+       
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="/css/ie.css">
+    <![endif]-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  
+  <body>
+    <div id="header">
+      <nav>
+        <li>
+          <a href="https://www.twitter.com/theropfather">
+          <img src="/images/twitter.png" alt="Twitter" style="margin-top:5px" width="50"></a>
+        </li>
+      </nav>
     </div>
 
     <div class="wrapper">
@@ -54,8 +45,9 @@
         </div>
         {{ content }}
       </section>
-
     </div>
+
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    </body>
+    
+  </body>
 </html>

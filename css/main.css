@@ -545,7 +545,7 @@ table {
 body {
   padding: 0px 0 20px 0px;
   margin: 0px;
-  font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 "OpenSansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f0e7d5;
   font-weight: normal;
   background: #252525;
@@ -578,6 +578,8 @@ h1 {
 }
 
 h2 {
+  color: #d7cfbe;
+  font-family: 'OpenSansSemiboldItalic', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
 
@@ -740,25 +742,11 @@ dt {
   font-size: 14px;
 }
 
-#header nav li.fork {
-  float: left;
-  margin-left: 0px;
-}
-#header nav li.downloads {
-  float: right;
-  margin-left: 6px;
-}
-#header nav li.title {
-  float: right;
-  margin-right: 10px;
-  font-size: 11px;
-}
-
 section {
   max-width: 650px;
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 section #title {
   border: 0;
@@ -822,33 +810,4 @@ section #title .credits.right {
   nav {
     display: none;
   }
-}
-
-.sidebar {
-  background:url("../images/nav-bg.gif") repeat scroll 0 0 #353535;
-  width:250px;
-  height:auto;
-  margin-top:314px;
-  float:left;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-right:3px solid #434343;
-  border-top:3px solid #434343;
-  border-bottom:3px solid #434343;
-}
-
-.sidebar ul {
-  padding-left:5px;
-  list-style:none;
-}
-
-.sidebar li {
-  margin-left:10px;
-}
-
-.side-head {
-    font-size:18px;
-    text-decoration:underline;
-    margin-left:0px !important;
-    margin-bottom:5px;
 }
